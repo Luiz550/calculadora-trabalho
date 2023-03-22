@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,7 +14,7 @@ namespace calculadora_trabalho
     public partial class Form1 : Form
     {
         decimal valor1 = 0, valor2 = 0;
-        String operacao = "";
+        string operacao = "";
         public Form1()
         {
             InitializeComponent();
@@ -71,36 +72,85 @@ namespace calculadora_trabalho
 
         private void button7_Click(object sender, EventArgs e)
         {
-
+            if (txtResultado.Text != "")
+            {
+                valor1 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture);
+                txtResultado.Text = "";
+                operacao = "DIVIDIR";
+                lblOperacao.Text = "/";
+            }
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            valor1 = decimal.Parse(txtResultado.Text, CultureInfo.InvarianteCulture);
-            txtResultado.Text = "";
-            operacao = "SOMA";
-            lblOperacao.Text = "+";
+            if (txtResultado.Text != "")
+            {
+                valor1 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture);
+                txtResultado.Text = "";
+                operacao = "MULTIPLICAR";
+                lblOperacao.Text = "*";
+            }
         }
+        
 
         private void button17_Click(object sender, EventArgs e)
         {
-
-        }
-
+            if (txtResultado.Text != "")
+            {
+                valor1 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture);
+                txtResultado.Text = "";
+                operacao = "SUBTRAIR";
+                lblOperacao.Text = "-";
+            }
+        }    
         private void button12_Click(object sender, EventArgs e)
         {
-
+            if (txtResultado.Text != "")
+            {
+                valor1 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture);
+                txtResultado.Text = "";
+                operacao = "SOMA";
+                lblOperacao.Text = "+";
+            }
         }
 
         private void button11_Click(object sender, EventArgs e)
         {
-            Valor2 = Decimal.Parse(txtResultado.Text, CultureInfo.InvarianteCulture);
-
-            if (operacao == "Soma")
+            valor2 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture);
+            if (operacao == "SOMA")
             {
-                valor1 = valor2;
+                txtResultado.Text = Convert.ToString(valor1 + valor2);
             }
+            else if (operacao == "SUBTRAIR")
+            {
+                txtResultado.Text = Convert.ToString(valor1 - valor2);
+            }
+            else if (operacao == "MULTIPLICAR")
+            {
+                txtResultado.Text = Convert.ToString(valor1 * valor2);
+            }
+            else if (operacao == "DIVIDIR")
+            {
+                txtResultado.Text = Convert.ToString(valor1 / valor2);
+            }
+        }
 
+        private void button16_Click(object sender, EventArgs e)
+        {
+            txtResultado.Text = "";
+            valor1 = 0;
+            valor2 = 0;
+            lblOperacao.Text = "";
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            txtResultado.Text = "";
         }
 
         private void button8_Click(object sender, EventArgs e)

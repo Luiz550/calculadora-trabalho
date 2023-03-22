@@ -54,25 +54,28 @@ namespace calculadora_trabalho
             // 
             // type
             // 
-            this.type.Location = new System.Drawing.Point(104, 12);
+            this.type.Location = new System.Drawing.Point(139, 15);
+            this.type.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.type.Name = "type";
-            this.type.Size = new System.Drawing.Size(348, 37);
+            this.type.Size = new System.Drawing.Size(463, 45);
             this.type.TabIndex = 0;
             // 
             // lblOperacao
             // 
             this.lblOperacao.AutoSize = true;
-            this.lblOperacao.Location = new System.Drawing.Point(83, 25);
+            this.lblOperacao.Location = new System.Drawing.Point(574, 31);
+            this.lblOperacao.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblOperacao.Name = "lblOperacao";
-            this.lblOperacao.Size = new System.Drawing.Size(0, 13);
+            this.lblOperacao.Size = new System.Drawing.Size(0, 16);
             this.lblOperacao.TabIndex = 1;
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.button1.Location = new System.Drawing.Point(72, 51);
+            this.button1.Location = new System.Drawing.Point(96, 63);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 44);
+            this.button1.Size = new System.Drawing.Size(100, 54);
             this.button1.TabIndex = 2;
             this.button1.Text = "7";
             this.button1.UseVisualStyleBackColor = false;
@@ -81,9 +84,10 @@ namespace calculadora_trabalho
             // button2
             // 
             this.button2.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.button2.Location = new System.Drawing.Point(153, 55);
+            this.button2.Location = new System.Drawing.Point(204, 68);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 44);
+            this.button2.Size = new System.Drawing.Size(100, 54);
             this.button2.TabIndex = 3;
             this.button2.Text = "8";
             this.button2.UseVisualStyleBackColor = false;
@@ -92,9 +96,10 @@ namespace calculadora_trabalho
             // button3
             // 
             this.button3.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.button3.Location = new System.Drawing.Point(234, 55);
+            this.button3.Location = new System.Drawing.Point(312, 68);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 44);
+            this.button3.Size = new System.Drawing.Size(100, 54);
             this.button3.TabIndex = 4;
             this.button3.Text = "9";
             this.button3.UseVisualStyleBackColor = false;
@@ -103,9 +108,10 @@ namespace calculadora_trabalho
             // button4
             // 
             this.button4.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.button4.Location = new System.Drawing.Point(314, 55);
+            this.button4.Location = new System.Drawing.Point(419, 68);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 44);
+            this.button4.Size = new System.Drawing.Size(100, 54);
             this.button4.TabIndex = 5;
             this.button4.Text = "*";
             this.button4.UseVisualStyleBackColor = false;
@@ -114,19 +120,22 @@ namespace calculadora_trabalho
             // button5
             // 
             this.button5.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.button5.Location = new System.Drawing.Point(396, 55);
+            this.button5.Location = new System.Drawing.Point(528, 68);
+            this.button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 44);
+            this.button5.Size = new System.Drawing.Size(100, 54);
             this.button5.TabIndex = 6;
             this.button5.Text = "CE";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button7
             // 
             this.button7.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.button7.Location = new System.Drawing.Point(315, 203);
+            this.button7.Location = new System.Drawing.Point(420, 250);
+            this.button7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 44);
+            this.button7.Size = new System.Drawing.Size(100, 54);
             this.button7.TabIndex = 8;
             this.button7.Text = "/";
             this.button7.UseVisualStyleBackColor = false;
@@ -135,9 +144,10 @@ namespace calculadora_trabalho
             // button8
             // 
             this.button8.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.button8.Location = new System.Drawing.Point(234, 203);
+            this.button8.Location = new System.Drawing.Point(312, 250);
+            this.button8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 44);
+            this.button8.Size = new System.Drawing.Size(100, 54);
             this.button8.TabIndex = 9;
             this.button8.Text = ".";
             this.button8.UseVisualStyleBackColor = false;
@@ -146,9 +156,10 @@ namespace calculadora_trabalho
             // button10
             // 
             this.button10.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.button10.Location = new System.Drawing.Point(72, 203);
+            this.button10.Location = new System.Drawing.Point(96, 250);
+            this.button10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(156, 44);
+            this.button10.Size = new System.Drawing.Size(208, 54);
             this.button10.TabIndex = 11;
             this.button10.Text = "0";
             this.button10.UseVisualStyleBackColor = false;
@@ -157,9 +168,10 @@ namespace calculadora_trabalho
             // button11
             // 
             this.button11.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.button11.Location = new System.Drawing.Point(395, 153);
+            this.button11.Location = new System.Drawing.Point(527, 188);
+            this.button11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(75, 92);
+            this.button11.Size = new System.Drawing.Size(100, 113);
             this.button11.TabIndex = 12;
             this.button11.Text = "=";
             this.button11.UseVisualStyleBackColor = false;
@@ -168,9 +180,10 @@ namespace calculadora_trabalho
             // button12
             // 
             this.button12.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.button12.Location = new System.Drawing.Point(315, 151);
+            this.button12.Location = new System.Drawing.Point(420, 186);
+            this.button12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(75, 44);
+            this.button12.Size = new System.Drawing.Size(100, 54);
             this.button12.TabIndex = 13;
             this.button12.Text = "+";
             this.button12.UseVisualStyleBackColor = false;
@@ -179,9 +192,10 @@ namespace calculadora_trabalho
             // button13
             // 
             this.button13.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.button13.Location = new System.Drawing.Point(234, 151);
+            this.button13.Location = new System.Drawing.Point(312, 186);
+            this.button13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(75, 44);
+            this.button13.Size = new System.Drawing.Size(100, 54);
             this.button13.TabIndex = 14;
             this.button13.Text = "3";
             this.button13.UseVisualStyleBackColor = false;
@@ -190,9 +204,10 @@ namespace calculadora_trabalho
             // button14
             // 
             this.button14.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.button14.Location = new System.Drawing.Point(153, 151);
+            this.button14.Location = new System.Drawing.Point(204, 186);
+            this.button14.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(75, 44);
+            this.button14.Size = new System.Drawing.Size(100, 54);
             this.button14.TabIndex = 15;
             this.button14.Text = "2";
             this.button14.UseVisualStyleBackColor = false;
@@ -201,9 +216,10 @@ namespace calculadora_trabalho
             // button15
             // 
             this.button15.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.button15.Location = new System.Drawing.Point(72, 151);
+            this.button15.Location = new System.Drawing.Point(96, 186);
+            this.button15.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(75, 44);
+            this.button15.Size = new System.Drawing.Size(100, 54);
             this.button15.TabIndex = 16;
             this.button15.Text = "1";
             this.button15.UseVisualStyleBackColor = false;
@@ -212,19 +228,22 @@ namespace calculadora_trabalho
             // button16
             // 
             this.button16.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.button16.Location = new System.Drawing.Point(395, 101);
+            this.button16.Location = new System.Drawing.Point(527, 124);
+            this.button16.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(75, 44);
+            this.button16.Size = new System.Drawing.Size(100, 54);
             this.button16.TabIndex = 17;
             this.button16.Text = "C";
             this.button16.UseVisualStyleBackColor = false;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
             // button17
             // 
             this.button17.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.button17.Location = new System.Drawing.Point(315, 101);
+            this.button17.Location = new System.Drawing.Point(420, 124);
+            this.button17.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(75, 44);
+            this.button17.Size = new System.Drawing.Size(100, 54);
             this.button17.TabIndex = 18;
             this.button17.Text = "-";
             this.button17.UseVisualStyleBackColor = false;
@@ -233,9 +252,10 @@ namespace calculadora_trabalho
             // button18
             // 
             this.button18.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.button18.Location = new System.Drawing.Point(234, 101);
+            this.button18.Location = new System.Drawing.Point(312, 124);
+            this.button18.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(75, 44);
+            this.button18.Size = new System.Drawing.Size(100, 54);
             this.button18.TabIndex = 19;
             this.button18.Text = "6";
             this.button18.UseVisualStyleBackColor = false;
@@ -244,9 +264,10 @@ namespace calculadora_trabalho
             // button19
             // 
             this.button19.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.button19.Location = new System.Drawing.Point(153, 101);
+            this.button19.Location = new System.Drawing.Point(204, 124);
+            this.button19.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(75, 44);
+            this.button19.Size = new System.Drawing.Size(100, 54);
             this.button19.TabIndex = 20;
             this.button19.Text = "5";
             this.button19.UseVisualStyleBackColor = false;
@@ -255,9 +276,10 @@ namespace calculadora_trabalho
             // button20
             // 
             this.button20.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.button20.Location = new System.Drawing.Point(72, 101);
+            this.button20.Location = new System.Drawing.Point(96, 124);
+            this.button20.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(75, 44);
+            this.button20.Size = new System.Drawing.Size(100, 54);
             this.button20.TabIndex = 21;
             this.button20.Text = "4";
             this.button20.UseVisualStyleBackColor = false;
@@ -266,16 +288,17 @@ namespace calculadora_trabalho
             // txtResultado
             // 
             this.txtResultado.AutoSize = true;
-            this.txtResultado.Location = new System.Drawing.Point(112, 25);
+            this.txtResultado.Location = new System.Drawing.Point(149, 31);
+            this.txtResultado.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtResultado.Name = "txtResultado";
-            this.txtResultado.Size = new System.Drawing.Size(0, 13);
+            this.txtResultado.Size = new System.Drawing.Size(0, 16);
             this.txtResultado.TabIndex = 22;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.txtResultado);
             this.Controls.Add(this.button20);
             this.Controls.Add(this.button19);
@@ -297,8 +320,10 @@ namespace calculadora_trabalho
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lblOperacao);
             this.Controls.Add(this.type);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
